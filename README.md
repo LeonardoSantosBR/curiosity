@@ -1,6 +1,9 @@
-### NASA info:
+### NASA basic info:
 <p>oficial website: https://api.nasa.gov/</p>
 <p>api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
+
+### Astroday logo
+<img width="362" height="362" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
 
 ###  <ins>Ui first concept by Claude code</ins>
 <div style="display: flex;">
