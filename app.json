@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "astroday",
-    "slug": "astroday",
+    "name": "curiosity",
+    "slug": "curiosity",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "",
     "scheme": "astroday",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -13,15 +13,15 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "",
+        "backgroundImage": "",
+        "monochromeImage": ""
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "g"
     },
     "plugins": [
       "expo-router",
@@ -30,7 +30,7 @@
         {
           "backgroundColor": "#208AEF",
           "android": {
-            "image": "./assets/images/splash-icon.png",
+            "image": "",
             "imageWidth": 76
           }
         }
