@@ -3,22 +3,23 @@
 <p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
 
 ###  <ins>UI fix by Claude Code Design</ins>:
+* i changed the app's name to curiosity and some ui to be more minimalistic
 <table align="center">
   <tr>
     <td align="center">
-      <img width="278" height="592" alt="Image" src="https://github.com/user-attachments/assets/a78f9a9e-47b6-410c-8581-828e61916379" /><br/>
+      <img width="279" height="582" alt="Image" src="https://github.com/user-attachments/assets/4ea9d9b0-2dd6-4963-b582-f3cb0dd8dc03" /><br/>
       <sub><b>Home</b></sub>
     </td>
     <td align="center">
-      <img width="281" height="588" alt="Image" src="https://github.com/user-attachments/assets/82dedb14-43e2-44d3-b3c9-76db32486f85" /><br/>
+      <img width="280" height="588" alt="Image" src="https://github.com/user-attachments/assets/fbe84446-ce59-4429-81fb-45d56d4759bf" /><br/>
       <sub><b>Detail</b></sub>
     </td>
     <td align="center">
-      <img width="277" height="587" alt="Image" src="https://github.com/user-attachments/assets/d3adcde6-4498-4f4f-989d-f4ce13f88e9d" /><br/>
+      <img width="280" height="587" alt="Image" src="https://github.com/user-attachments/assets/b19cc834-48aa-4625-b619-01c7d71fe6d3" /><br/>
       <sub><b>Explore</b></sub>
     </td>
     <td align="center">
-      <img width="281" height="582" alt="Image" src="https://github.com/user-attachments/assets/efd0c77e-9d24-4336-9480-96cf3e61e2d6" /><br/>
+      <img width="280" height="585" alt="Image" src="https://github.com/user-attachments/assets/02b6e666-ba2b-42d0-97a6-4cf15f0b92ca" /><br/>
       <sub><b>Birthday</b></sub>
     </td>
   </tr>
