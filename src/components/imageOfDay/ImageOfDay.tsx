@@ -1,34 +1,42 @@
-import { Pressable, Text, View } from "react-native";
-import { DataCard } from "../dataCard";
+import { getDateInfo } from "@/helpers";
+import { useGetImageOfDay } from "@/hooks";
+import { Image, Pressable, Text, View } from "react-native";
+import { DateCard } from "../dateCard";
+import { Loading } from "../loading/Loading";
 
 export function ImageOfDay(): React.JSX.Element {
+  const dataInfo = getDateInfo();
+  const date = dataInfo.dateCompleted;
+  const { data, isLoading } = useGetImageOfDay(date);
+
   const handlePress = () => {
     console.log("Pressed");
   };
 
   return (
     <View className="p-4 gap-3">
-      <Pressable
-        onPress={handlePress}
-        className="rounded-3xl overflow-hidden"
-      >
+      <Pressable onPress={handlePress} className="rounded-3xl overflow-hidden">
         {({ pressed }) => (
           <View
             className={`p-5 bg-imageDay-card rounded-2xl gap-3 ${
               pressed ? "opacity-80" : "opacity-100"
             }`}
           >
-            <DataCard />
-            <View className="h-52 bg-imageDay-image rounded-2xl items-center justify-center" />
+            <DateCard />
+            <Image
+              source={{ uri: data?.url }}
+              className="h-52 w-full rounded-2xl bg-imageDay-image"
+              resizeMode="cover"
+            />
             <View className="gap-1 pt-2">
               <Text className="text-text-primary font-bold text-xl leading-snug">
-                The Blue Marble: Earth from Apollo 17
+                {data?.title}
               </Text>
-              <Text className="text-text-tertiary text-sm">
-                © NASA / Apollo 17 Crew
+              <Text className="text-text-tertiary text-sm " numberOfLines={2}>
+                ©{data?.copyright}
               </Text>
               <Text className="text-text-secondary text-lg" numberOfLines={2}>
-                Taken on December 7, 1972, this photograph of Earth became one of the most reproduced images in history...
+                {data?.explanation}
               </Text>
             </View>
           </View>
@@ -68,6 +76,7 @@ export function ImageOfDay(): React.JSX.Element {
           </View>
         )}
       </Pressable>
+      {isLoading && <Loading />}
     </View>
   );
 }
