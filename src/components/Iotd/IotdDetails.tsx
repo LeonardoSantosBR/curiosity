@@ -1,6 +1,6 @@
 import { Image, Text, View } from "react-native";
 
-export function IotdInfo(data: {
+export function IotdDetails(data: {
   url: string;
   title: string;
   copyright: string;

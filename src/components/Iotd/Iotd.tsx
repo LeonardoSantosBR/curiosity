@@ -3,7 +3,7 @@ import { useGetImageOfDay } from "@/hooks";
 import { Pressable, Text, View } from "react-native";
 import { Loading } from "../loading/Loading";
 import { DateBadge } from "./DateBadge";
-import { IotdInfo } from "./IotdInfo";
+import { IotdDetails } from "./IotdDetails";
 
 export function Iotd(): React.JSX.Element {
   const dateInfo = getDateInfo();
@@ -24,7 +24,7 @@ export function Iotd(): React.JSX.Element {
             }`}
           >
             <DateBadge />
-            <IotdInfo
+            <IotdDetails
               url={data?.url}
               title={data?.title}
               copyright={data?.copyright}
