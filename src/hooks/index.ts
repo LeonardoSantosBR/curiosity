@@ -1,2 +1,3 @@
 export * from "./useColorScheme"
-export * from "./useGetImageOfDay"
+export * from "./useGetIotd"
+

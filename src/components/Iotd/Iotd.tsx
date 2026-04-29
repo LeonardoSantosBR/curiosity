@@ -1,5 +1,5 @@
 import { getDateInfo } from "@/helpers";
-import { useGetImageOfDay } from "@/hooks";
+import { useGetIotd } from "@/hooks";
 import { Pressable, Text, View } from "react-native";
 import { Loading } from "../loading/Loading";
 import { DateBadge } from "./DateBadge";
@@ -8,7 +8,7 @@ import { IotdDetails } from "./IotdDetails";
 export function Iotd(): React.JSX.Element {
   const dateInfo = getDateInfo();
   const date = dateInfo.dateCompleted;
-  const { data, isLoading } = useGetImageOfDay(date);
+  const { data, isLoading } = useGetIotd(date);
 
   const handlePress = () => {
     console.log("Pressed");
