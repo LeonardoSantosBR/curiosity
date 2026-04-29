@@ -1,10 +1,10 @@
 import { getDateInfo } from "@/helpers";
 import { useGetImageOfDay } from "@/hooks";
 import { Image, Pressable, Text, View } from "react-native";
-import { DateCard } from "../dateCard";
+import { DateBadge } from "../dateBadge";
 import { Loading } from "../loading/Loading";
 
-export function ImageOfDay(): React.JSX.Element {
+export function Iotd(): React.JSX.Element {
   const dataInfo = getDateInfo();
   const date = dataInfo.dateCompleted;
   const { data, isLoading } = useGetImageOfDay(date);
@@ -22,7 +22,7 @@ export function ImageOfDay(): React.JSX.Element {
               pressed ? "opacity-80" : "opacity-100"
             }`}
           >
-            <DateCard />
+            <DateBadge />
             <Image
               source={{ uri: data?.url }}
               className="h-52 w-full rounded-2xl bg-imageDay-image"

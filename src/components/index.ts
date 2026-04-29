@@ -1,4 +1,4 @@
-export * from "./dateCard";
+export * from "./dateBadge";
 export * from "./header";
-export * from "./imageOfDay";
+export * from "./Iotd";
 
