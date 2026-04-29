@@ -1,6 +1,9 @@
-### <ins>NASA basic info</ins>:
+<h2>NASA basic info</h2>
 <p>- oficial website: https://api.nasa.gov/</p>
 <p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
+
+###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>
+<img width="405" height="865" alt="Image" src="https://github.com/user-attachments/assets/13b74ed1-7c3b-45d6-b79f-de195b46b553" />
 
 ###  <ins>UI fix by Claude Code Design</ins>:
 * i changed the app's name to curiosity and some ui to be more minimalistic
