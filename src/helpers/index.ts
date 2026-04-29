@@ -1,1 +1,2 @@
-export * from "./getDataInfo";
+export * from "./getDateInfo";
+

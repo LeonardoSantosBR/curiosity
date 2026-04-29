@@ -28,7 +28,8 @@ module.exports = {
           icon: '#1A1A1A',
         },
         imageDay: {
-          'card': '#E2E8F0'
+          card: '#E2E8F0',
+          image: '#B5D4F4'
         }
       },
     },
