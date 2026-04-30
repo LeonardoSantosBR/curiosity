@@ -1,7 +1,7 @@
 import { getDateInfo } from "@/helpers";
 import { Text, View } from "react-native";
 
-export function DateBadge(): React.JSX.Element {
+export function PotdDateBadge(): React.JSX.Element {
   const dateInfo = getDateInfo();
 
   return (

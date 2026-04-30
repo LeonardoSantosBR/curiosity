@@ -1,3 +1,3 @@
 export * from "./useColorScheme"
-export * from "./useGetIotd"
+export * from "./useGetPotd"
 

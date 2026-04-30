@@ -1,14 +1,14 @@
 import { getDateInfo } from "@/helpers";
-import { useGetIotd } from "@/hooks";
+import { useGetPotd } from "@/hooks";
 import { Pressable, Text, View } from "react-native";
 import { Loading } from "../loading/Loading";
-import { DateBadge } from "./DateBadge";
-import { IotdDetails } from "./IotdDetails";
+import { PotdDateBadge } from "./PotdDateBadge";
+import { PotdDetails } from "./PotdDetails";
 
-export function Iotd(): React.JSX.Element {
+export function Potd(): React.JSX.Element {
   const dateInfo = getDateInfo();
   const date = dateInfo.dateCompleted;
-  const { data, isLoading } = useGetIotd(date);
+  const { data, isLoading } = useGetPotd(date);
 
   const handlePress = () => {
     console.log("Pressed");
@@ -23,13 +23,16 @@ export function Iotd(): React.JSX.Element {
               pressed ? "opacity-80" : "opacity-100"
             }`}
           >
-            <DateBadge />
-            <IotdDetails
-              url={data?.url}
-              title={data?.title}
-              copyright={data?.copyright}
-              explanation={data?.explanation}
-            />
+            <PotdDateBadge />
+            {data && (
+              <PotdDetails
+                url={data.url}
+                title={data.title}
+                copyright={data.copyright}
+                explanation={data.explanation}
+                media_type={data.media_type}
+              />
+            )}
           </View>
         )}
       </Pressable>

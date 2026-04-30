@@ -1,3 +1,3 @@
 export * from "./header";
-export * from "./Iotd";
+export * from "./potd";
 
