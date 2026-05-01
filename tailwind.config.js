@@ -27,7 +27,7 @@ module.exports = {
           'button-active': '#E6F1FB',
           icon: '#1A1A1A',
         },
-        imageDay: {
+        potd: {
           card: '#E2E8F0',
           image: '#B5D4F4'
         }

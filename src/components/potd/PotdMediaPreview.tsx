@@ -27,7 +27,7 @@ export function PotdMediaPreview({
   return (
     <Image
       source={{ uri: url }}
-      className="h-52 w-full rounded-2xl bg-imageDay-image"
+      className="h-52 w-full rounded-2xl bg-potd-image"
       resizeMode="cover"
     />
   );

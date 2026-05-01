@@ -1,13 +1,12 @@
-import { getDateInfo } from "@/helpers";
 import { useGetPotd } from "@/hooks";
+import { useDateStore } from "@/stores";
 import { Pressable, Text, View } from "react-native";
 import { Loading } from "../components/loading/Loading";
 import { PotdDateBadge } from "../components/potd/PotdDateBadge";
 import { PotdDetails } from "../components/potd/PotdDetails";
 
 export function Potd(): React.JSX.Element {
-  const dateInfo = getDateInfo();
-  const date = dateInfo.dateCompleted;
+  const date = useDateStore((state) => state.date);
   const { data, isLoading } = useGetPotd(date);
 
   const handlePress = () => {
@@ -15,16 +14,16 @@ export function Potd(): React.JSX.Element {
   };
 
   return (
-    <View className="p-4 gap-3">
+    <View className="h-screen p-4 gap-3">
       <Pressable onPress={handlePress} className="rounded-3xl overflow-hidden">
         {({ pressed }) => (
           <View
-            className={`p-5 bg-imageDay-card rounded-2xl gap-3 ${
+            className={`p-5 bg-potd-card rounded-2xl gap-3 ${
               pressed ? "opacity-80" : "opacity-100"
             }`}
           >
             <PotdDateBadge />
-            {data && (
+            {data ? (
               <PotdDetails
                 url={data.url}
                 title={data.title}
@@ -32,6 +31,12 @@ export function Potd(): React.JSX.Element {
                 explanation={data.explanation}
                 media_type={data.media_type}
               />
+            ) : (
+              !isLoading && (
+                <Text className="text-text-primary text-center text-sm py-4">
+                  Ainda não há foto ou vídeo do dia disponível.
+                </Text>
+              )
             )}
           </View>
         )}
