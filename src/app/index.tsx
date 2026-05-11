@@ -1,5 +1,5 @@
-import { Header, PotdDateBadge, PotdDetails, PotdNoData } from "@/components";
-import { Loading } from "@/components/loading/Loading";
+import { Header, Loading, PotdDateBadge, PotdDetails, PotdNoData } from "@/components";
+
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
 import { useRouter } from "expo-router";

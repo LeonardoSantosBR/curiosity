@@ -1,4 +1,5 @@
 import { PotdCard } from "@/components";
+import { Loading } from "@/components/loading/Loading";
 import { CARD_GAP, H_PADDING } from "@/constants";
 import { useGetRandomPotd } from "@/hooks";
 import { potdDataType } from "@/types";
@@ -40,9 +41,7 @@ export default function PotdRandom(): React.JSX.Element {
       </View>
 
       {isLoading ? (
-        <View className="flex-1 items-center justify-center">
-          <Text className="text-text-secondary text-base">Carregando...</Text>
-        </View>
+        <Loading />
       ) : (
         <FlatList
           data={data}
