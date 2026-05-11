@@ -2,7 +2,7 @@
 <p>- oficial website: https://api.nasa.gov/</p>
 
 ### <ins>The curiosity logo</ins>:
-<img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
+<img width="1983" height="793" alt="Image" src="https://github.com/user-attachments/assets/8ebd5aa9-2f27-48db-887a-19f37950351a" />
 </br>
 
 ###  <ins>2026/05/11 · Birthday Picture </ins>:
