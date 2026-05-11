@@ -1,6 +1,14 @@
 <h2>NASA basic info</h2>
 <p>- oficial website: https://api.nasa.gov/</p>
-<p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
+
+### <ins>The curiosity logo</ins>:
+<img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
+
+###  <ins>2026/05/11 · Details · redesigned page</ins>
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/c6cfc225-f85f-4078-b37e-bca02c8e2b46" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/f5ae4b03-8955-4e10-b82a-d2499d017a6a" width="45%" />
+</p>
 
 ###  <ins>2026/05/05 · Details · screen Image of the day details</ins>
 <p align="start">
@@ -35,9 +43,6 @@
     </td>
   </tr>
 </table>
-
-### <ins>The curiosity logo</ins>:
-<img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
 
 ###  <ins>Ui first concept by Claude Code</ins>:
 <table align="center">
