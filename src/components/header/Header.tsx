@@ -1,6 +1,5 @@
 import { curiosityLogo } from "@/assets/index";
-import { Ionicons } from "@expo/vector-icons";
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 
 export function Header(): React.JSX.Element {
   return (
@@ -20,14 +19,6 @@ export function Header(): React.JSX.Element {
           </Text>
         </View>
       </View>
-
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel="Abrir calendário"
-        className="w-11 h-11 items-center justify-center rounded-full bg-header-button active:bg-header-button-active"
-      >
-        <Ionicons name="calendar-outline" size={20} color={"header-icon"} />
-      </Pressable>
     </View>
   );
 }

@@ -29,11 +29,15 @@ export default function HomeScreen(): React.JSX.Element {
     <SafeAreaView className="flex-1">
       <Header />
       <View className="h-screen bg-white p-4 gap-3">
-        <Pressable onPress={handlePress} className="rounded-3xl overflow-hidden">
+        <Pressable
+          onPress={handlePress}
+          className="rounded-3xl overflow-hidden"
+        >
           {({ pressed }) => (
             <View
-              className={`p-5 bg-potd-card rounded-2xl gap-3 ${pressed ? "opacity-80" : "opacity-100"
-                }`}
+              className={`p-5 bg-potd-card rounded-2xl gap-3 ${
+                pressed ? "opacity-80" : "opacity-100"
+              }`}
             >
               <PotdDateBadge />
               {data ? (
@@ -54,8 +58,9 @@ export default function HomeScreen(): React.JSX.Element {
         <Pressable onPress={handlePress}>
           {({ pressed }) => (
             <View
-              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${pressed ? "opacity-70" : "opacity-100"
-                }`}
+              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${
+                pressed ? "opacity-70" : "opacity-100"
+              }`}
             >
               <View className="w-9 h-9 rounded-xl bg-orange-100 items-center justify-center">
                 <Text className="text-orange-500 text-lg">⇄</Text>
@@ -69,8 +74,9 @@ export default function HomeScreen(): React.JSX.Element {
         <Pressable onPress={handlePress}>
           {({ pressed }) => (
             <View
-              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${pressed ? "opacity-70" : "opacity-100"
-                }`}
+              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${
+                pressed ? "opacity-70" : "opacity-100"
+              }`}
             >
               <View className="w-9 h-9 rounded-xl bg-red-100 items-center justify-center">
                 <Text className="text-red-400 text-lg">▦</Text>
