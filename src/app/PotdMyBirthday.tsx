@@ -1,6 +1,7 @@
 import { getPictureOfDay } from "@/api";
 import { BirthdayCardResult, BirthdayOptions, BirthdaySectionLabel } from "@/components";
 import { DAYS, MONTHS, YEARS } from "@/constants";
+import { formatResultDate } from "@/helpers";
 import { potdDataType } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
@@ -10,11 +11,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 function pad(n: number): string {
   return String(n).padStart(2, "0");
-}
-
-function formatResultDate(dateStr: string): string {
-  const [year, month, day] = dateStr.split("-");
-  return `${day} ${MONTHS[parseInt(month) - 1].toUpperCase()} ${year}`;
 }
 
 export default function PotdMyBirthday(): React.JSX.Element {

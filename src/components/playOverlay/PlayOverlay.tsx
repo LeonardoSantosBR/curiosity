@@ -16,14 +16,15 @@ export function PlayOverlay(): React.JSX.Element {
     >
       <View
         style={{
-          width: 56,
-          height: 56,
+          width: 46,
+          height: 46,
           borderRadius: 28,
           alignItems: "center",
           justifyContent: "center",
+          backgroundColor: "red",
         }}
       >
-        <Text style={{ color: "red", fontSize: 22, marginLeft: 4 }}>▶</Text>
+        <Text style={{ color: "white", fontSize: 22, marginLeft: 4 }}>▶</Text>
       </View>
     </View>
   );
