@@ -1,7 +1,7 @@
 import { potdDataType } from "@/types";
 import { useVideoPlayer, VideoView } from "expo-video";
 import { Image } from "react-native";
-import { YouTubeThumbnail } from "../youtubeThumbnail";
+import { VideoThumbnail } from "../videoThumbnail";
 
 
 export function PotdMediaPreview({
@@ -22,7 +22,7 @@ export function PotdMediaPreview({
   );
 
   if (media_type === "video") {
-    if (isYoutube) return <YouTubeThumbnail url={url} />;
+    if (isYoutube) return <VideoThumbnail url={url} />;
     return (
       <VideoView
         player={player}

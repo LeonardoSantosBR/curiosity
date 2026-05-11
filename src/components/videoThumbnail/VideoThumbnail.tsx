@@ -1,9 +1,9 @@
-import { extractYouTubeId } from "@/helpers";
+import { extractYouTubeId, resolveWatchUrl } from "@/helpers";
 import { useState } from "react";
 import { Image, Linking, Pressable, View } from "react-native";
 import { PlayOverlay } from "../playOverlay";
 
-export function YouTubeThumbnail({
+export function VideoThumbnail({
   url,
   isDetailed = false,
 }: {
@@ -14,7 +14,7 @@ export function YouTubeThumbnail({
   const [thumbnailUri, setThumbnailUri] = useState(
     videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null
   );
-  const watchUrl = videoId ? `https://www.youtube.com/watch?v=${videoId}` : url;
+  const watchUrl = resolveWatchUrl(url, videoId);
 
   return (
     <Pressable
