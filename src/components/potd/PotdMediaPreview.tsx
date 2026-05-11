@@ -3,6 +3,7 @@ import { useVideoPlayer, VideoView } from "expo-video";
 import { Image } from "react-native";
 import { YouTubeThumbnail } from "../youtubeThumbnail";
 
+
 export function PotdMediaPreview({
   url,
   media_type,
