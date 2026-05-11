@@ -3,20 +3,33 @@
 
 ### <ins>The curiosity logo</ins>:
 <img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
+</br>
 
-###  <ins>2026/05/11 · Details · redesigned page</ins>
+###  <ins>2026/05/11 · Birthday Picture </ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/e2eed069-cfc9-4f59-87d0-f9badecc34ee" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/2da6b3d1-d943-4a6e-9df0-4eaba773b90a" width="45%" />
+</p>
+
+###  <ins>2026/05/11 · Random Pictures </ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/a90a3256-b637-4449-b805-a958cdff794c" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/60aa456b-676b-42dc-b598-959a55a67482" width="45%" />
+</p>
+
+###  <ins>2026/05/11 · Details · redesigned page</ins>:
 <p align="start">
   <img src="https://github.com/user-attachments/assets/c6cfc225-f85f-4078-b37e-bca02c8e2b46" width="45%"/>
   <img src="https://github.com/user-attachments/assets/f5ae4b03-8955-4e10-b82a-d2499d017a6a" width="45%" />
 </p>
 
-###  <ins>2026/05/05 · Details · screen Image of the day details</ins>
+###  <ins>2026/05/05 · Details · screen Image of the day details</ins>:
 <p align="start">
   <img src="https://github.com/user-attachments/assets/2e35fd98-27e0-4096-a72c-8872ba95e009" width="45%" />
   <img src="https://github.com/user-attachments/assets/f27d1670-6c82-4a34-befb-eed3384840fe" width="45%" />
 </p>
 
-###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>
+###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>:
 <p align="start">
   <img src="https://github.com/user-attachments/assets/b3c4469e-8de6-4ee1-8d7b-81ddee74fc1b" width="45%" />
 </p>
