@@ -1,9 +1,8 @@
 import PotdInspectDetails from "@/components/potdInspect/PotdInspectDetails";
-import { useLocalSearchParams, useRouter } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
 import { ScrollView, View } from "react-native";
 
 export default function PotdInspect(): React.JSX.Element {
-  const router = useRouter();
   const { url, title, copyright, explanation, media_type } =
     useLocalSearchParams<{
       url: string;

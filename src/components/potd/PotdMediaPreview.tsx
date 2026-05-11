@@ -22,11 +22,10 @@ export function PotdMediaPreview({
 
   if (media_type === "video") {
     if (isYoutube) return <YouTubeThumbnail url={url} />;
-
     return (
       <VideoView
         player={player}
-        style={{ height: 208, width: "100%", borderRadius: 16 }}
+        style={{ width: "100%", height: 208, borderRadius: 16 }}
         nativeControls={false}
         contentFit="cover"
         fullscreenOptions={{ enable: true }}

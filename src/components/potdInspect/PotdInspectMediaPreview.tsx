@@ -19,12 +19,11 @@ export function PotdInspectMediaPreview({
   });
 
   if (media_type === "video") {
-    if (isYoutube) return <YouTubeThumbnail url={url} />;
-
+    if (isYoutube) return <YouTubeThumbnail url={url} isDetailed={true} />;
     return (
       <VideoView
         player={player}
-        style={{ height: 408, width: "100%" }}
+        style={{ width: "100%", height: 408 }}
         nativeControls={false}
         contentFit="cover"
         fullscreenOptions={{ enable: true }}

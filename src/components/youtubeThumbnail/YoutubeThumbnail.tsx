@@ -2,26 +2,33 @@ import { extractYouTubeId } from "@/helpers";
 import { useState } from "react";
 import { Image, Linking, Pressable, Text, View } from "react-native";
 
-export function YouTubeThumbnail({ url }: { url: string }): React.JSX.Element {
+export function YouTubeThumbnail({
+  url,
+  isDetailed = false,
+}: {
+  url: string;
+  isDetailed?: boolean;
+}): React.JSX.Element {
   const videoId = extractYouTubeId(url);
   const [thumbnailUri, setThumbnailUri] = useState(
     videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null
   );
   const watchUrl = videoId ? `https://www.youtube.com/watch?v=${videoId}` : url;
-
+  
   return (
     <Pressable
       onPress={() => Linking.openURL(watchUrl)}
       style={{
-        height: 208,
         width: "100%",
+        height: 208,
         overflow: "hidden",
+        borderRadius: isDetailed ? 0 : 16,
       }}
     >
       {thumbnailUri ? (
         <Image
           source={{ uri: thumbnailUri }}
-          style={{ height: "100%", width: "100%", padding: 10 }}
+          style={{ width: "100%", height: "100%" }}
           resizeMode="cover"
           onError={() =>
             setThumbnailUri(

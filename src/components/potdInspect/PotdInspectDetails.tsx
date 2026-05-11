@@ -7,10 +7,9 @@ export default function PotdInspectDetails(
   data: potdDataType
 ): React.JSX.Element {
   const router = useRouter();
-
   return (
     <View className="gap-5">
-      <PotdInspectMediaPreview url={data?.url} media_type={data?.media_type} />
+      <PotdInspectMediaPreview url={data?.url} media_type={data?.media_type}/>
       <View className="px-10 gap-3">
         <View className="gap-1">
           <Text className="text-text-primary font-bold text-2xl leading-tight">
