@@ -1,1 +1,2 @@
-export * from "./potdCard";
+export * from "./PotdCard";
+
