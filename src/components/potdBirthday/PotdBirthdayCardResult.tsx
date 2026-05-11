@@ -1,7 +1,7 @@
 import { potdDataType } from "@/types";
 import { Pressable, Text, View } from "react-native";
 
-export function BirthdayCardResult({
+export function PotdBirthdayCardResult({
   data,
   handleCardResultPress,
   formatResultDate,

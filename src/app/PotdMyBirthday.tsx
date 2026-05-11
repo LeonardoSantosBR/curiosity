@@ -1,5 +1,12 @@
 import { getPictureOfDay } from "@/api";
-import { BirthdayCardResult, BirthdayOptions, BirthdaySectionLabel } from "@/components";
+import {
+  PotdBirthdayCardResult,
+  PotdBirthdayError,
+  PotdBirthdayFindButton,
+  PotdBirthdayHeader,
+  PotdBirthdayOptions,
+  PotdBirthdaySectionLabel,
+} from "@/components";
 import { DAYS, MONTHS, YEARS } from "@/constants";
 import { formatResultDate } from "@/helpers";
 import { potdDataType } from "@/types";
@@ -52,14 +59,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
 
   return (
     <SafeAreaView className="flex-1 bg-white">
-      <View className="flex-row items-center gap-3 px-5 pt-4 pb-2">
-        <Pressable onPress={() => router.back()}>
-          <Text className="text-text-primary text-4xl leading-none">‹</Text>
-        </Pressable>
-        <Text className="text-text-primary font-bold text-2xl">
-          Meu Aniversário
-        </Text>
-      </View>
+      <PotdBirthdayHeader />
 
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -70,14 +70,14 @@ export default function PotdMyBirthday(): React.JSX.Element {
         </Text>
 
         <View className="mb-5">
-          <BirthdaySectionLabel label="Dia" />
+          <PotdBirthdaySectionLabel label="Dia" />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{ paddingHorizontal: 20 }}
           >
             {DAYS.map((day) => (
-              <BirthdayOptions
+              <PotdBirthdayOptions
                 key={day}
                 label={String(day)}
                 selected={selectedDay === day}
@@ -88,14 +88,14 @@ export default function PotdMyBirthday(): React.JSX.Element {
         </View>
 
         <View className="mb-5">
-          <BirthdaySectionLabel label="Mês" />
+          <PotdBirthdaySectionLabel label="Mês" />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{ paddingHorizontal: 20 }}
           >
             {MONTHS.map((month, i) => (
-              <BirthdayOptions
+              <PotdBirthdayOptions
                 key={month}
                 label={selectedMonth === i ? `✓ ${month}` : month}
                 selected={selectedMonth === i}
@@ -106,14 +106,14 @@ export default function PotdMyBirthday(): React.JSX.Element {
         </View>
 
         <View className="mb-7">
-          <BirthdaySectionLabel label="Ano" />
+          <PotdBirthdaySectionLabel label="Ano" />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={{ paddingHorizontal: 20 }}
           >
             {YEARS.map((year) => (
-              <BirthdayOptions
+              <PotdBirthdayOptions
                 key={year}
                 label={String(year)}
                 selected={selectedYear === year}
@@ -129,31 +129,19 @@ export default function PotdMyBirthday(): React.JSX.Element {
           style={{ marginHorizontal: 20, borderRadius: 16, overflow: "hidden" }}
         >
           {({ pressed }) => (
-            <View
-              style={{
-                backgroundColor: canFetch ? "black" : "#d1d5db",
-                opacity: pressed && canFetch ? 0.8 : 1,
-                paddingVertical: 16,
-                alignItems: "center",
-              }}
-            >
-              <Text style={{ color: "white", fontWeight: "600", fontSize: 16 }}>
-                {isLoading ? "Buscando..." : "Ver foto do cosmos"}
-              </Text>
-            </View>
+            <PotdBirthdayFindButton
+              isError={!!isError}
+              canFetch={canFetch}
+              isLoading={isLoading}
+              pressed={pressed}
+            />
           )}
         </Pressable>
 
-        {isError && (
-          <View className="mx-5 mt-5 p-4 bg-red-50 rounded-2xl">
-            <Text className="text-red-500 text-sm text-center">
-              Não foi possível encontrar uma foto para essa data.
-            </Text>
-          </View>
-        )}
+        <PotdBirthdayError isError={!!isError} />
 
         {data && (
-          <BirthdayCardResult
+          <PotdBirthdayCardResult
             data={data}
             handleCardResultPress={handleCardResultPress}
             formatResultDate={formatResultDate}

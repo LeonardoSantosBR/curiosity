@@ -3,7 +3,7 @@ import { getCardThumbnail } from "@/helpers";
 import { potdDataType } from "@/types";
 import { Image, Pressable, Text, View } from "react-native";
 
-export function PotdCard({
+export function PotdRandomCard({
   item,
   onPress,
 }: {

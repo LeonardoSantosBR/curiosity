@@ -1,6 +1,6 @@
 import { Pressable, Text } from "react-native";
 
-export function BirthdayOptions({
+export function PotdBirthdayOptions({
   label,
   selected,
   onPress,

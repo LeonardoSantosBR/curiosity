@@ -1,6 +1,6 @@
 import { Text } from "react-native";
 
-export function BirthdaySectionLabel({ label }: { label: string }): React.JSX.Element {
+export function PotdBirthdaySectionLabel({ label }: { label: string }): React.JSX.Element {
   return (
     <Text
       style={{
