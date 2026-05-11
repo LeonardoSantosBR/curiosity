@@ -58,7 +58,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
     <SafeAreaView className="flex-1 bg-white">
       <View className="flex-row items-center gap-3 px-5 pt-4 pb-2">
         <Pressable onPress={() => router.back()}>
-          <Text style={{ fontSize: 28, color: "#111827", lineHeight: 34 }}>‹</Text>
+          <Text className="text-text-primary text-4xl leading-none">‹</Text>
         </Pressable>
         <Text className="text-text-primary font-bold text-2xl">
           Meu Aniversário
