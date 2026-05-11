@@ -4,4 +4,5 @@ export type potdDataType = {
   copyright?: string;
   explanation: string;
   media_type?: "image" | "video";
+  date?: string;
 };
