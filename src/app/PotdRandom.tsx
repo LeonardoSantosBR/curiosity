@@ -1,0 +1,5 @@
+import { View } from "react-native";
+
+export default function PotdInspect(): React.JSX.Element {
+  return <View></View>;
+}
