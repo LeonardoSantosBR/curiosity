@@ -1,5 +1,4 @@
 import { Header, Loading, PotdDateBadge, PotdDetails, PotdNoData } from "@/components";
-
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
 import { useRouter } from "expo-router";
@@ -27,6 +26,10 @@ export default function HomeScreen(): React.JSX.Element {
 
   const handleRandomPotd = () => {
     router.push("/PotdRandom");
+  };
+
+  const handleMyBirthdayPotd = () => {
+    router.push("/PotdMyBirthday");
   };
 
   return (
@@ -75,7 +78,7 @@ export default function HomeScreen(): React.JSX.Element {
             </View>
           )}
         </Pressable>
-        <Pressable>
+        <Pressable onPress={handleMyBirthdayPotd}>
           {({ pressed }) => (
             <View
               className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${
