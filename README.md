@@ -5,6 +5,14 @@
 <img width="1983" height="793" alt="Image" src="https://github.com/user-attachments/assets/8ebd5aa9-2f27-48db-887a-19f37950351a" />
 </br>
 
+</br>
+</br>
+
+###  <ins>2026/05/12 · Random Pictures · improvement with refresh button to save requests</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/c387f67e-79ed-429b-aba7-c725b5a81b3d" width="45%"/>
+</p>
+
 ###  <ins>2026/05/11 · Birthday Picture </ins>:
 <p align="start">
   <img src="https://github.com/user-attachments/assets/e2eed069-cfc9-4f59-87d0-f9badecc34ee" width="45%"/>
