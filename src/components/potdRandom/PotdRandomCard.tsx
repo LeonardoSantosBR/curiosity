@@ -23,7 +23,7 @@ export function PotdRandomCard({
           {thumbnail ? (
             <Image
               source={{ uri: thumbnail }}
-              style={{ width: "100%", height: 110 }}
+              style={{ width: "100%", height: 120 }}
               resizeMode="cover"
             />
           ) : (

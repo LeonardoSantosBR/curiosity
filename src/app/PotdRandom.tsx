@@ -11,15 +11,16 @@ export default function PotdRandom(): React.JSX.Element {
   const router = useRouter();
 
   const handleCardPress = (item: potdDataType) => {
+    const paramsData = {
+      url: item.url,
+      title: item.title,
+      copyright: item.copyright ?? "",
+      explanation: item.explanation,
+      media_type: item.media_type ?? "image",
+    }
     router.push({
       pathname: "/PotdInspect",
-      params: {
-        url: item.url,
-        title: item.title,
-        copyright: item.copyright ?? "",
-        explanation: item.explanation,
-        media_type: item.media_type ?? "image",
-      },
+      params: paramsData
     });
   };
 
