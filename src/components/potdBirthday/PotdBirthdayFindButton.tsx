@@ -1,6 +1,5 @@
 import { t } from "@lingui/core/macro";
 import { Text, View } from "react-native";
-import { Loading } from "../loading";
 
 export function PotdBirthdayFindButton({
   isError,
@@ -21,7 +20,7 @@ export function PotdBirthdayFindButton({
       style={{ opacity: pressed && canFetch ? 0.8 : 1 }}
     >
       <Text className="text-birthday-button-text font-semibold text-base">
-        {isLoading ? <Loading /> : t`Ver foto do cosmos`}
+        {t`Ver foto do cosmos`}
       </Text>
     </View>
   );

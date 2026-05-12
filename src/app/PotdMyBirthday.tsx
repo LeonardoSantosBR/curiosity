@@ -1,5 +1,6 @@
 import { getPictureOfDay } from "@/api";
 import {
+  Loading,
   PotdBirthdayCardResult,
   PotdBirthdayError,
   PotdBirthdayFindButton,
@@ -98,7 +99,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
             {MONTHS.map((month, i) => (
               <PotdBirthdayOptions
                 key={month}
-                label={selectedMonth === i ? `✓ ${month}` : month}
+                label={selectedMonth === i ? month : month}
                 selected={selectedMonth === i}
                 onPress={() => setSelectedMonth(i)}
               />
@@ -148,6 +149,8 @@ export default function PotdMyBirthday(): React.JSX.Element {
             formatDisplayDate={formatDisplayDate}
           />
         )}
+
+        {isLoading && <Loading />}
       </ScrollView>
     </SafeAreaView>
   );
