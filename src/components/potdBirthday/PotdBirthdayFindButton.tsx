@@ -13,14 +13,10 @@ export function PotdBirthdayFindButton({
 }): React.JSX.Element {
   return (
     <View
-      style={{
-        backgroundColor: canFetch ? "black" : "#d1d5db",
-        opacity: pressed && canFetch ? 0.8 : 1,
-        paddingVertical: 16,
-        alignItems: "center",
-      }}
+      className={`items-center py-4 ${canFetch ? "bg-birthday-button" : "bg-birthday-button-disabled"}`}
+      style={{ opacity: pressed && canFetch ? 0.8 : 1 }}
     >
-      <Text style={{ color: "white", fontWeight: "600", fontSize: 16 }}>
+      <Text className="text-birthday-button-text font-semibold text-base">
         {isLoading ? "Buscando..." : "Ver foto do cosmos"}
       </Text>
     </View>

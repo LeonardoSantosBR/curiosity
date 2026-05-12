@@ -21,7 +21,7 @@ export default function PotdInspectDetails(
             </Text>
           )}
         </View>
-        <View className="h-px bg-gray-100" />
+        <View className="h-px bg-inspect-divider" />
         <Text className="text-text-secondary text-base leading-relaxed">
           {data?.explanation}
         </Text>
@@ -31,11 +31,11 @@ export default function PotdInspectDetails(
         >
           {({ pressed }) => (
             <View
-              className={`items-center py-4 bg-[#0a090a] ${
+              className={`items-center py-4 bg-inspect-button ${
                 pressed ? "opacity-70" : "opacity-100"
               }`}
             >
-              <Text className="text-white font-semibold text-base tracking-wide">
+              <Text className="text-inspect-button-text font-semibold text-base tracking-wide">
                 Voltar
               </Text>
             </View>

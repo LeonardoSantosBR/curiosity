@@ -4,11 +4,11 @@ import { Pressable, Text, View } from "react-native";
 export function PotdBirthdayCardResult({
   data,
   handleCardResultPress,
-  formatResultDate,
+  formatDisplayDate,
 }: {
   data: potdDataType;
   handleCardResultPress: (item: potdDataType) => void;
-  formatResultDate: (date: string) => string;
+  formatDisplayDate: (date: string) => string;
 }): React.JSX.Element {
   return (
     <Pressable
@@ -22,16 +22,10 @@ export function PotdBirthdayCardResult({
         >
           {data.date && (
             <View
-              style={{
-                alignSelf: "flex-start",
-                backgroundColor: "#0d1b3e",
-                paddingHorizontal: 12,
-                paddingVertical: 4,
-                borderRadius: 999,
-              }}
+              className="self-start bg-birthday-badge px-3 py-1 rounded-full"
             >
-              <Text style={{ color: "white", fontSize: 12, fontWeight: "700" }}>
-                {formatResultDate(data.date)}
+              <Text className="text-birthday-badge-text text-xs font-bold">
+                {formatDisplayDate(data.date)}
               </Text>
             </View>
           )}

@@ -12,23 +12,11 @@ export function PotdBirthdayOptions({
   return (
     <Pressable
       onPress={onPress}
-      style={{
-        paddingHorizontal: 16,
-        paddingVertical: 8,
-        borderRadius: 999,
-        borderWidth: 1,
-        backgroundColor: selected ? "black" : "white",
-        marginRight: 8,
-      }}
+      className={`px-4 py-2 rounded-full border mr-2 ${selected ? "bg-birthday-option" : "bg-birthday-option-inactive"}`}
     >
       <Text
-        style={{
-          color: selected ? "white" : "#374151",
-          fontWeight: selected ? "600" : "400",
-          fontSize: 14,
-          minWidth: 20,
-          textAlign: "center",
-        }}
+        className={`text-sm text-center ${selected ? "text-birthday-option-text font-semibold" : "text-birthday-option-text-inactive font-normal"}`}
+        style={{ minWidth: 20 }}
       >
         {label}
       </Text>

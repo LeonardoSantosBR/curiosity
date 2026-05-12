@@ -8,7 +8,7 @@ import {
   PotdBirthdaySectionLabel,
 } from "@/components";
 import { DAYS, MONTHS, YEARS } from "@/constants";
-import { formatResultDate } from "@/helpers";
+import { formatDisplayDate } from "@/helpers";
 import { potdDataType } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
@@ -144,7 +144,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
           <PotdBirthdayCardResult
             data={data}
             handleCardResultPress={handleCardResultPress}
-            formatResultDate={formatResultDate}
+            formatDisplayDate={formatDisplayDate}
           />
         )}
       </ScrollView>
