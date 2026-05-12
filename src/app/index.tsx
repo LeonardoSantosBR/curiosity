@@ -20,24 +20,17 @@ export default function HomeScreen(): React.JSX.Element {
 
   const handlePotdInspect = () => {
     if (!data) return;
+    const paramsData = {
+      url: data.url,
+      title: data.title,
+      copyright: data.copyright ?? "",
+      explanation: data.explanation,
+      media_type: data.media_type ?? "image",
+    }
     router.push({
       pathname: "/PotdInspect",
-      params: {
-        url: data.url,
-        title: data.title,
-        copyright: data.copyright,
-        explanation: data.explanation,
-        media_type: data.media_type,
-      },
+      params: paramsData
     });
-  };
-
-  const handleRandomPotd = () => {
-    router.push("/PotdRandom");
-  };
-
-  const handleMyBirthdayPotd = () => {
-    router.push("/PotdMyBirthday");
   };
 
   return (
@@ -50,9 +43,8 @@ export default function HomeScreen(): React.JSX.Element {
         >
           {({ pressed }) => (
             <View
-              className={`p-5 bg-potd-card rounded-2xl gap-3 ${
-                pressed ? "opacity-80" : "opacity-100"
-              }`}
+              className={`p-5 bg-potd-card rounded-2xl gap-3 ${pressed ? "opacity-80" : "opacity-100"
+                }`}
             >
               <PotdDateBadge />
               {data ? (
@@ -70,12 +62,11 @@ export default function HomeScreen(): React.JSX.Element {
           )}
         </Pressable>
 
-        <Pressable onPress={handleRandomPotd}>
+        <Pressable onPress={() => router.push("/PotdRandom")}>
           {({ pressed }) => (
             <View
-              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${
-                pressed ? "opacity-70" : "opacity-100"
-              }`}
+              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${pressed ? "opacity-70" : "opacity-100"
+                }`}
             >
               <View className="w-9 h-9 rounded-xl bg-orange-100 items-center justify-center">
                 <Text className="text-orange-500 text-lg">
@@ -88,12 +79,11 @@ export default function HomeScreen(): React.JSX.Element {
             </View>
           )}
         </Pressable>
-        <Pressable onPress={handleMyBirthdayPotd}>
+        <Pressable onPress={() => router.push("/PotdMyBirthday")}>
           {({ pressed }) => (
             <View
-              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${
-                pressed ? "opacity-70" : "opacity-100"
-              }`}
+              className={`flex-row items-center gap-3 p-4 rounded-2xl border border-gray-300 ${pressed ? "opacity-70" : "opacity-100"
+                }`}
             >
               <View className="w-9 h-9 rounded-xl bg-red-100 items-center justify-center">
                 <Text className="text-red-400 text-lg">
