@@ -22,7 +22,6 @@ msgstr ""
 #: src/components/potdBirthday/PotdBirthdayCardResult.tsx:34
 #: src/components/potdBirthday/PotdBirthdayCardResult.tsx:40
 #: src/components/potdInspect/PotdInspectDetails.tsx:17
-#: src/components/potdInspect/PotdInspectDetails.tsx:21
 #: src/components/potdInspect/PotdInspectDetails.tsx:27
 #: src/components/potdRandom/PotdRandomCard.tsx:45
 #: src/helpers/getDateInfo.ts:12
@@ -30,26 +29,26 @@ msgid "{0}"
 msgstr ""
 
 #: src/constants/periods.ts:14
-msgid "Abril"
-msgstr "Abril"
+#~ msgid "Abril"
+#~ msgstr "Abril"
 
 #: src/constants/periods.ts:18
-msgid "Agosto"
-msgstr "Agosto"
+#~ msgid "Agosto"
+#~ msgstr "Agosto"
 
 #: src/components/potd/PotdNoData.tsx:7
 msgid "Ainda não há foto ou vídeo do dia disponível."
 msgstr "Ainda não há foto ou vídeo do dia disponível."
 
-#: src/app/PotdMyBirthday.tsx:113
+#: src/app/PotdMyBirthday.tsx:111
 msgid "Ano"
 msgstr "Ano"
 
 #: src/constants/periods.ts:22
-msgid "Dezembro"
-msgstr "Dezembro"
+#~ msgid "Dezembro"
+#~ msgstr "Dezembro"
 
-#: src/app/PotdMyBirthday.tsx:77
+#: src/app/PotdMyBirthday.tsx:75
 msgid "Dia"
 msgstr "Dia"
 
@@ -62,34 +61,34 @@ msgid "Explorar aleatórias"
 msgstr "Explorar aleatórias"
 
 #: src/constants/periods.ts:12
-msgid "Fevereiro"
-msgstr "Fevereiro"
+#~ msgid "Fevereiro"
+#~ msgstr "Fevereiro"
 
 #: src/components/header/Header.tsx:19
 msgid "Foto do dia"
 msgstr "Foto do dia"
 
 #: src/constants/periods.ts:11
-msgid "Janeiro"
-msgstr "Janeiro"
+#~ msgid "Janeiro"
+#~ msgstr "Janeiro"
 
 #: src/constants/periods.ts:17
-msgid "Julho"
-msgstr "Julho"
+#~ msgid "Julho"
+#~ msgstr "Julho"
 
 #: src/constants/periods.ts:16
-msgid "Junho"
-msgstr "Junho"
+#~ msgid "Junho"
+#~ msgstr "Junho"
 
 #: src/constants/periods.ts:15
-msgid "Maio"
-msgstr "Maio"
+#~ msgid "Maio"
+#~ msgstr "Maio"
 
 #: src/constants/periods.ts:13
-msgid "Março"
-msgstr "Março"
+#~ msgid "Março"
+#~ msgstr "Março"
 
-#: src/app/PotdMyBirthday.tsx:95
+#: src/app/PotdMyBirthday.tsx:93
 msgid "Mês"
 msgstr "Mês"
 
@@ -106,22 +105,22 @@ msgid "No meu aniversário"
 msgstr "No meu aniversário"
 
 #: src/constants/periods.ts:21
-msgid "Novembro"
-msgstr "Novembro"
+#~ msgid "Novembro"
+#~ msgstr "Novembro"
 
 #: src/constants/periods.ts:20
-msgid "Outubro"
-msgstr "Outubro"
+#~ msgid "Outubro"
+#~ msgstr "Outubro"
 
-#: src/app/PotdMyBirthday.tsx:73
+#: src/app/PotdMyBirthday.tsx:71
 msgid "Qual foto a NASA tirou no dia do seu nascimento?"
 msgstr "Qual foto a NASA tirou no dia do seu nascimento?"
 
 #: src/constants/periods.ts:19
-msgid "Setembro"
-msgstr "Setembro"
+#~ msgid "Setembro"
+#~ msgstr "Setembro"
 
-#: src/components/potdBirthday/PotdBirthdayFindButton.tsx:24
+#: src/components/potdBirthday/PotdBirthdayFindButton.tsx:23
 msgid "Ver foto do cosmos"
 msgstr "Ver foto do cosmos"
 

@@ -22,23 +22,21 @@ msgstr ""
 #: src/components/potdBirthday/PotdBirthdayCardResult.tsx:34
 #: src/components/potdBirthday/PotdBirthdayCardResult.tsx:40
 #: src/components/potdInspect/PotdInspectDetails.tsx:17
-#: src/components/potdInspect/PotdInspectDetails.tsx:21
 #: src/components/potdInspect/PotdInspectDetails.tsx:27
 #: src/components/potdRandom/PotdRandomCard.tsx:45
 #: src/helpers/getDateInfo.ts:12
 msgid "{0}"
 msgstr "{0}"
 
-
 #: src/components/potd/PotdNoData.tsx:7
 msgid "Ainda não há foto ou vídeo do dia disponível."
 msgstr "There are no photos or videos available from that day yet."
 
-#: src/app/PotdMyBirthday.tsx:113
+#: src/app/PotdMyBirthday.tsx:111
 msgid "Ano"
 msgstr "Year"
 
-#: src/app/PotdMyBirthday.tsx:77
+#: src/app/PotdMyBirthday.tsx:75
 msgid "Dia"
 msgstr "Day"
 
@@ -54,7 +52,7 @@ msgstr "Explore randomly"
 msgid "Foto do dia"
 msgstr "Photo of the day"
 
-#: src/app/PotdMyBirthday.tsx:95
+#: src/app/PotdMyBirthday.tsx:93
 msgid "Mês"
 msgstr "Month"
 
@@ -70,11 +68,11 @@ msgstr "We were unable to find a photo for that date."
 msgid "No meu aniversário"
 msgstr "On my birthday"
 
-#: src/app/PotdMyBirthday.tsx:73
+#: src/app/PotdMyBirthday.tsx:71
 msgid "Qual foto a NASA tirou no dia do seu nascimento?"
 msgstr "What photo did NASA take on the day you were born?"
 
-#: src/components/potdBirthday/PotdBirthdayFindButton.tsx:24
+#: src/components/potdBirthday/PotdBirthdayFindButton.tsx:23
 msgid "Ver foto do cosmos"
 msgstr "See photo of the cosmos"
 
