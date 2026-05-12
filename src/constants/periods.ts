@@ -5,6 +5,6 @@ export const YEARS = Array.from(
   (_, i) => CURRENT_YEAR - i
 );
 export const MONTHS = [
-  "JAN","FEV","MAR","ABR","MAI","JUN",
-  "JUL","AGO","SET","OUT","NOV","DEZ",
+  "Jan","Fev","Mar","Abr","Mai","Jun",
+  "Jul","Ago","Set","Out","Nov","Dez",
 ];

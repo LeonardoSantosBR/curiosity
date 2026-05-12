@@ -1,6 +1,7 @@
 import { Header, Loading, PotdDateBadge, PotdDetails, PotdNoData } from "@/components";
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
+import { t } from '@lingui/core/macro';
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -71,7 +72,7 @@ export default function HomeScreen(): React.JSX.Element {
                 <Text className="text-orange-500 text-lg">⇄</Text>
               </View>
               <Text className="text-text-primary font-semibold text-base">
-                Explorar aleatórias
+                {t`Explorar aleatórias`}
               </Text>
             </View>
           )}
@@ -86,7 +87,7 @@ export default function HomeScreen(): React.JSX.Element {
                 <Text className="text-red-400 text-lg">▦</Text>
               </View>
               <Text className="text-text-primary font-semibold text-base">
-                No meu aniversário
+                {t`No meu aniversário`}
               </Text>
             </View>
           )}

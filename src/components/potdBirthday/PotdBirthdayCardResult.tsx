@@ -1,4 +1,5 @@
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { Pressable, Text, View } from "react-native";
 
 export function PotdBirthdayCardResult({
@@ -30,13 +31,13 @@ export function PotdBirthdayCardResult({
             </View>
           )}
           <Text className="text-text-primary font-bold text-lg leading-tight">
-            {data.title}
+            {t`${data.title}`}
           </Text>
           <Text
             className="text-text-secondary text-sm leading-relaxed"
             numberOfLines={3}
           >
-            {data.explanation}
+            {t`${data.explanation}`}
           </Text>
         </View>
       )}

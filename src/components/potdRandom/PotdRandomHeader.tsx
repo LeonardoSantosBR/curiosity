@@ -1,3 +1,4 @@
+import { t } from "@lingui/core/macro";
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
@@ -11,7 +12,7 @@ export function PotdRandomHeader() {
         className="flex-row items-center gap-3"
       >
         <Text className="text-text-primary text-4xl leading-none">‹</Text>
-        <Text className="text-text-primary font-bold text-xl">Explorar</Text>
+        <Text className="text-text-primary font-bold text-xl">{t`Explorar`}</Text>
       </Pressable>
     </View>
   );
