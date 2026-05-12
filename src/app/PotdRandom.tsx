@@ -7,7 +7,7 @@ import { useRouter } from "expo-router";
 import { FlatList, View } from "react-native";
 
 export default function PotdRandom(): React.JSX.Element {
-  const { data, isLoading } = useGetRandomPotd();
+  const { data, isLoading, refetch } = useGetRandomPotd();
   const router = useRouter();
 
   const handleCardPress = (item: potdDataType) => {
@@ -25,7 +25,7 @@ export default function PotdRandom(): React.JSX.Element {
 
   return (
     <View className="flex-1 bg-white">
-      <PotdRandomHeader />
+      <PotdRandomHeader onRefresh={refetch} />
 
       {isLoading ? (
         <Loading />

@@ -13,7 +13,7 @@ export function PotdDetails(data: potdDataType): React.JSX.Element {
         </Text>
         {data?.copyright && (
           <Text className="text-text-tertiary text-sm" numberOfLines={1}>
-            ©{t`${data.copyright}`}
+            ©{data?.copyright}
           </Text>
         )}
         <Text className="text-text-secondary text-lg" numberOfLines={2}>
