@@ -1,6 +1,7 @@
 import { CARD_WIDTH } from "@/constants";
 import { formatDisplayDate, getCardThumbnail } from "@/helpers";
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
 
 export function PotdRandomCard({
@@ -10,7 +11,6 @@ export function PotdRandomCard({
   item: potdDataType;
   onPress: () => void;
 }): React.JSX.Element {
-
   const thumbnail = getCardThumbnail(item);
 
   return (
@@ -42,7 +42,7 @@ export function PotdRandomCard({
               className="text-text-primary font-bold text-sm leading-tight"
               numberOfLines={2}
             >
-              {item.title}
+              {t`${item.title}`}
             </Text>
           </View>
         </View>

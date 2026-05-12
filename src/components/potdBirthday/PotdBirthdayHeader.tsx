@@ -1,3 +1,4 @@
+import { t } from "@lingui/core/macro";
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
@@ -10,7 +11,7 @@ export function PotdBirthdayHeader(): React.JSX.Element {
         <Text className="text-text-primary text-4xl leading-none">‹</Text>
       </Pressable>
       <Text className="text-text-primary font-bold text-2xl">
-        Meu Aniversário
+        {t`Meu Aniversário`}
       </Text>
     </View>
   );

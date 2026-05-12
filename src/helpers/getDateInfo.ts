@@ -1,3 +1,5 @@
+import { t } from "@lingui/core/macro";
+
 export function getDateInfo(): {
   day: string;
   month: string;
@@ -7,7 +9,7 @@ export function getDateInfo(): {
 } {
   const date = new Date();
   const day = String(date.getDate()).padStart(2, "0");
-  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const month = t`${String(date.getMonth() + 1).padStart(2, "0")}`;
   const year = date.getFullYear();
 
   const monthShort = date

@@ -10,6 +10,7 @@ import {
 import { DAYS, MONTHS, YEARS } from "@/constants";
 import { formatDisplayDate } from "@/helpers";
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "expo-router";
 import { useState } from "react";
@@ -66,11 +67,11 @@ export default function PotdMyBirthday(): React.JSX.Element {
         contentContainerStyle={{ paddingBottom: 40 }}
       >
         <Text className="text-text-secondary text-sm px-5 pb-5">
-          Qual foto a NASA tirou no dia do seu nascimento?
+          {t`Qual foto a NASA tirou no dia do seu nascimento?`}
         </Text>
 
         <View className="mb-5">
-          <PotdBirthdaySectionLabel label="Dia" />
+          <PotdBirthdaySectionLabel label={t`Dia`} />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -88,7 +89,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
         </View>
 
         <View className="mb-5">
-          <PotdBirthdaySectionLabel label="Mês" />
+          <PotdBirthdaySectionLabel label={t`Mês`} />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -106,7 +107,7 @@ export default function PotdMyBirthday(): React.JSX.Element {
         </View>
 
         <View className="mb-7">
-          <PotdBirthdaySectionLabel label="Ano" />
+          <PotdBirthdaySectionLabel label={t`Ano`} />
           <ScrollView
             horizontal
             showsHorizontalScrollIndicator={false}
