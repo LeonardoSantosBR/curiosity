@@ -18,7 +18,7 @@ export default function PotdInspectDetails(
           </Text>
           {data?.copyright && (
             <Text className="text-text-tertiary text-sm font-medium">
-              ©{t`${data.copyright}`}
+              ©{data.copyright}
             </Text>
           )}
         </View>
