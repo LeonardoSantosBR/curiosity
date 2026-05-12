@@ -1,4 +1,5 @@
 import { curiosityLogo } from "@/assets/index";
+import { t } from "@lingui/core/macro";
 import { Image, Text, View } from "react-native";
 
 export function Header(): React.JSX.Element {
@@ -15,7 +16,7 @@ export function Header(): React.JSX.Element {
             Curiosity
           </Text>
           <Text className="text-sm text-header-subtitle">
-            Foto do dia · <Text className="text-header-accent">NASA</Text>
+            {t`Foto do dia`} · <Text className="text-header-accent">NASA</Text>
           </Text>
         </View>
       </View>

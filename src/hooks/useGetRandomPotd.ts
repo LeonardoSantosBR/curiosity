@@ -6,5 +6,6 @@ export function useGetRandomPotd() {
   return useQuery<potdDataType[]>({
     queryKey: ["randomPictures"],
     queryFn: () => getRandomPictures(),
+    staleTime: Infinity,
   });
 }

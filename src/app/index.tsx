@@ -1,6 +1,14 @@
-import { Header, Loading, PotdDateBadge, PotdDetails, PotdNoData } from "@/components";
+import {
+  Header,
+  Loading,
+  PotdDateBadge,
+  PotdDetails,
+  PotdNoData,
+} from "@/components";
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { t } from "@lingui/core/macro";
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -70,10 +78,12 @@ export default function HomeScreen(): React.JSX.Element {
               }`}
             >
               <View className="w-9 h-9 rounded-xl bg-orange-100 items-center justify-center">
-                <Text className="text-orange-500 text-lg">⇄</Text>
+                <Text className="text-orange-500 text-lg">
+                  <FontAwesome name="random" size={13} color="orange" />
+                </Text>
               </View>
               <Text className="text-text-primary font-semibold text-base">
-                Explorar aleatórias
+                {t`Explorar aleatórias`}
               </Text>
             </View>
           )}
@@ -86,10 +96,12 @@ export default function HomeScreen(): React.JSX.Element {
               }`}
             >
               <View className="w-9 h-9 rounded-xl bg-red-100 items-center justify-center">
-                <Text className="text-red-400 text-lg">▦</Text>
+                <Text className="text-red-400 text-lg">
+                  <FontAwesome name="birthday-cake" size={13} color="pink" />
+                </Text>
               </View>
               <Text className="text-text-primary font-semibold text-base">
-                No meu aniversário
+                {t`No meu aniversário`}
               </Text>
             </View>
           )}

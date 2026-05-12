@@ -1,4 +1,5 @@
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { Text, View } from "react-native";
 import { PotdMediaPreview } from "./PotdMediaPreview";
 
@@ -8,15 +9,15 @@ export function PotdDetails(data: potdDataType): React.JSX.Element {
       <PotdMediaPreview url={data?.url} media_type={data?.media_type} />
       <View className="gap-1 pt-2">
         <Text className="text-text-primary font-bold text-xl leading-snug">
-          {data?.title}
+          {t`${data?.title}`}
         </Text>
         {data?.copyright && (
           <Text className="text-text-tertiary text-sm" numberOfLines={1}>
-            ©{data.copyright}
+            ©{data?.copyright}
           </Text>
         )}
         <Text className="text-text-secondary text-lg" numberOfLines={2}>
-          {data?.explanation}
+          {t`${data?.explanation}`}
         </Text>
       </View>
     </>

@@ -1,4 +1,5 @@
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 import { PotdInspectMediaPreview } from "./PotdInspectMediaPreview";
@@ -13,7 +14,7 @@ export default function PotdInspectDetails(
       <View className="px-10 gap-3">
         <View className="gap-1">
           <Text className="text-text-primary font-bold text-2xl leading-tight">
-            {data?.title}
+            {t`${data?.title}`}
           </Text>
           {data?.copyright && (
             <Text className="text-text-tertiary text-sm font-medium">
@@ -21,9 +22,9 @@ export default function PotdInspectDetails(
             </Text>
           )}
         </View>
-        <View className="h-px bg-gray-100" />
+        <View className="h-px bg-inspect-divider" />
         <Text className="text-text-secondary text-base leading-relaxed">
-          {data?.explanation}
+          {t`${data?.explanation}`}
         </Text>
         <Pressable
           onPress={() => router.back()}
@@ -31,12 +32,12 @@ export default function PotdInspectDetails(
         >
           {({ pressed }) => (
             <View
-              className={`items-center py-4 bg-[#0a090a] ${
+              className={`items-center py-4 bg-inspect-button ${
                 pressed ? "opacity-70" : "opacity-100"
               }`}
             >
-              <Text className="text-white font-semibold text-base tracking-wide">
-                Voltar
+              <Text className="text-inspect-button-text font-semibold text-base tracking-wide">
+                {t`Voltar`}
               </Text>
             </View>
           )}

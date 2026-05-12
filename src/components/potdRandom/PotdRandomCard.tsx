@@ -1,21 +1,16 @@
-import { CARD_WIDTH, MONTHS } from "@/constants";
-import { getCardThumbnail } from "@/helpers";
+import { CARD_WIDTH } from "@/constants";
+import { formatDisplayDate, getCardThumbnail } from "@/helpers";
 import { potdDataType } from "@/types";
+import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
 
-export function PotdCard({
+export function PotdRandomCard({
   item,
   onPress,
 }: {
   item: potdDataType;
   onPress: () => void;
 }): React.JSX.Element {
-  function formatDate(dateStr?: string): string {
-    if (!dateStr) return "";
-    const [year, month, day] = dateStr.split("-");
-    return `${day} ${MONTHS[parseInt(month) - 1]} ${year}`;
-  }
-
   const thumbnail = getCardThumbnail(item);
 
   return (
@@ -23,7 +18,7 @@ export function PotdCard({
       {({ pressed }) => (
         <View
           style={{ opacity: pressed ? 0.75 : 1 }}
-          className="bg-white rounded-2xl overflow-hidden border border-gray-100"
+          className="bg-random-card rounded-2xl overflow-hidden border border-random-card-border"
         >
           {thumbnail ? (
             <Image
@@ -39,15 +34,15 @@ export function PotdCard({
           )}
           <View className="p-2.5 gap-0.5">
             {item.date && (
-              <Text className="text-[#ef7c00] text-xs font-semibold">
-                {formatDate(item.date)}
+              <Text className="text-random-date text-xs font-semibold">
+                {formatDisplayDate(item.date)}
               </Text>
             )}
             <Text
               className="text-text-primary font-bold text-sm leading-tight"
               numberOfLines={2}
             >
-              {item.title}
+              {t`${item.title}`}
             </Text>
           </View>
         </View>

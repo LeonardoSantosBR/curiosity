@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-05-12 10:49-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pt\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. placeholder {0}: String(date.getMonth() + 1).padStart(2, "0")
+#. placeholder {0}: data.copyright
+#. placeholder {0}: data.explanation
+#: src/components/potd/PotdDetails.tsx:12
+#: src/components/potd/PotdDetails.tsx:16
+#: src/components/potd/PotdDetails.tsx:20
+#: src/components/potdBirthday/PotdBirthdayCardResult.tsx:34
+#: src/components/potdBirthday/PotdBirthdayCardResult.tsx:40
+#: src/components/potdInspect/PotdInspectDetails.tsx:17
+#: src/components/potdInspect/PotdInspectDetails.tsx:27
+#: src/components/potdRandom/PotdRandomCard.tsx:45
+#: src/helpers/getDateInfo.ts:12
+msgid "{0}"
+msgstr ""
+
+#: src/constants/periods.ts:14
+#~ msgid "Abril"
+#~ msgstr "Abril"
+
+#: src/constants/periods.ts:18
+#~ msgid "Agosto"
+#~ msgstr "Agosto"
+
+#: src/components/potd/PotdNoData.tsx:7
+msgid "Ainda não há foto ou vídeo do dia disponível."
+msgstr "Ainda não há foto ou vídeo do dia disponível."
+
+#: src/app/PotdMyBirthday.tsx:111
+msgid "Ano"
+msgstr "Ano"
+
+#: src/constants/periods.ts:22
+#~ msgid "Dezembro"
+#~ msgstr "Dezembro"
+
+#: src/app/PotdMyBirthday.tsx:75
+msgid "Dia"
+msgstr "Dia"
+
+#: src/components/potdRandom/PotdRandomHeader.tsx:15
+msgid "Explorar"
+msgstr "Explorar"
+
+#: src/app/index.tsx:75
+msgid "Explorar aleatórias"
+msgstr "Explorar aleatórias"
+
+#: src/constants/periods.ts:12
+#~ msgid "Fevereiro"
+#~ msgstr "Fevereiro"
+
+#: src/components/header/Header.tsx:19
+msgid "Foto do dia"
+msgstr "Foto do dia"
+
+#: src/constants/periods.ts:11
+#~ msgid "Janeiro"
+#~ msgstr "Janeiro"
+
+#: src/constants/periods.ts:17
+#~ msgid "Julho"
+#~ msgstr "Julho"
+
+#: src/constants/periods.ts:16
+#~ msgid "Junho"
+#~ msgstr "Junho"
+
+#: src/constants/periods.ts:15
+#~ msgid "Maio"
+#~ msgstr "Maio"
+
+#: src/constants/periods.ts:13
+#~ msgid "Março"
+#~ msgstr "Março"
+
+#: src/app/PotdMyBirthday.tsx:93
+msgid "Mês"
+msgstr "Mês"
+
+#: src/components/potdBirthday/PotdBirthdayHeader.tsx:14
+msgid "Meu Aniversário"
+msgstr "Meu Aniversário"
+
+#: src/components/potdBirthday/PotdBirthdayError.tsx:10
+msgid "Não foi possível encontrar uma foto para essa data."
+msgstr "Não foi possível encontrar uma foto para essa data."
+
+#: src/app/index.tsx:90
+msgid "No meu aniversário"
+msgstr "No meu aniversário"
+
+#: src/constants/periods.ts:21
+#~ msgid "Novembro"
+#~ msgstr "Novembro"
+
+#: src/constants/periods.ts:20
+#~ msgid "Outubro"
+#~ msgstr "Outubro"
+
+#: src/app/PotdMyBirthday.tsx:71
+msgid "Qual foto a NASA tirou no dia do seu nascimento?"
+msgstr "Qual foto a NASA tirou no dia do seu nascimento?"
+
+#: src/constants/periods.ts:19
+#~ msgid "Setembro"
+#~ msgstr "Setembro"
+
+#: src/components/potdBirthday/PotdBirthdayFindButton.tsx:23
+msgid "Ver foto do cosmos"
+msgstr "Ver foto do cosmos"
+
+#: src/components/potdInspect/PotdInspectDetails.tsx:40
+msgid "Voltar"
+msgstr "Voltar"
