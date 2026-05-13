@@ -20,7 +20,7 @@ export function PotdBirthdayCardResult({
     >
       {({ pressed }) => (
         <View
-          className="flex-row h-40 bg-potd-card gap-2"
+          className="flex-row h-36 bg-potd-card gap-2"
           style={{ opacity: pressed ? 0.75 : 1 }}
         >
           {isImage &&
