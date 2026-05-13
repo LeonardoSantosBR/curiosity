@@ -26,7 +26,9 @@ export default function PotdRandom(): React.JSX.Element {
 
   return (
     <View className="flex-1 bg-white">
-      <PotdRandomHeader onRefresh={refetch} />
+      <View className="p-2">
+        <PotdRandomHeader onRefresh={refetch} />
+      </View>
 
       {isLoading ? (
         <Loading />
