@@ -6,7 +6,17 @@
 </br>
 
 </br>
-</br>
+
+###  <ins>2026/05/13 · minor style adjustments</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/2388af41-7033-496f-b2f0-15399333a591"   width="45%"/>
+       <img  src="https://github.com/user-attachments/assets/95d1ced7-7672-4389-923b-32b2b563d082"  width="45%"/>
+
+</p>
+<p align="start">
+     <img  src="https://github.com/user-attachments/assets/8dd00cf2-d3e8-47af-a908-4cea9e92cf20"   width="45%"/>
+     <img  src="https://github.com/user-attachments/assets/cb3f67ad-6628-46e2-bddc-2767add270e5"   width="45%"/>
+  </p>
 
 ###  <ins>2026/05/12 · Random Pictures · improvement with refresh button to save requests</ins>:
 <p align="start">
