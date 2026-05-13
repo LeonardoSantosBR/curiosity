@@ -46,7 +46,7 @@ export function PotdBirthdayCardResult({
             </Text>
             <Text
               className="text-text-secondary text-sm leading-relaxed"
-              numberOfLines={3}
+              numberOfLines={2}
             >
               {t`${data.explanation}`}
             </Text>
