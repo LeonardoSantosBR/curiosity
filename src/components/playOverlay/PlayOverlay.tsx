@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import Entypo from '@expo/vector-icons/Entypo';
+import { View } from "react-native";
 
 export function PlayOverlay(): React.JSX.Element {
   return (
@@ -24,7 +25,7 @@ export function PlayOverlay(): React.JSX.Element {
           backgroundColor: "red",
         }}
       >
-        <Text style={{ color: "white", fontSize: 22, marginLeft: 4 }}>▶</Text>
+        <Entypo name="controller-play" size={26} color="white" />
       </View>
     </View>
   );

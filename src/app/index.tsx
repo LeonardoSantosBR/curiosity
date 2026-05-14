@@ -5,6 +5,7 @@ import {
   PotdDetails,
   PotdNoData,
 } from "@/components";
+import { getCloudFlareWorkerImageUrl } from "@/helpers";
 import { useGetPotd } from "@/hooks";
 import { useDateStore } from "@/stores";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -49,7 +50,7 @@ export default function HomeScreen(): React.JSX.Element {
               <PotdDateBadge />
               {data ? (
                 <PotdDetails
-                  url={data.url}
+                  url={getCloudFlareWorkerImageUrl(data.url)}
                   title={data.title}
                   copyright={data.copyright}
                   explanation={data.explanation}
