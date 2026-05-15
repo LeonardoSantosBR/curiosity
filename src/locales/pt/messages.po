@@ -13,9 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. placeholder {0}: String(date.getMonth() + 1).padStart(2, "0")
-#. placeholder {0}: data.copyright
-#. placeholder {0}: data.explanation
 #: src/components/potd/PotdDetails.tsx:12
 #: src/components/potd/PotdDetails.tsx:16
 #: src/components/potd/PotdDetails.tsx:20
@@ -25,8 +22,8 @@ msgstr ""
 #: src/components/potdInspect/PotdInspectDetails.tsx:27
 #: src/components/potdRandom/PotdRandomCard.tsx:45
 #: src/helpers/getDateInfo.ts:12
-msgid "{0}"
-msgstr ""
+#~ msgid "{0}"
+#~ msgstr ""
 
 #: src/constants/periods.ts:14
 #~ msgid "Abril"
@@ -40,7 +37,7 @@ msgstr ""
 msgid "Ainda não há foto ou vídeo do dia disponível."
 msgstr "Ainda não há foto ou vídeo do dia disponível."
 
-#: src/app/PotdMyBirthday.tsx:111
+#: src/app/PotdMyBirthday.tsx:113
 msgid "Ano"
 msgstr "Ano"
 
@@ -48,15 +45,15 @@ msgstr "Ano"
 #~ msgid "Dezembro"
 #~ msgstr "Dezembro"
 
-#: src/app/PotdMyBirthday.tsx:75
+#: src/app/PotdMyBirthday.tsx:77
 msgid "Dia"
 msgstr "Dia"
 
-#: src/components/potdRandom/PotdRandomHeader.tsx:15
+#: src/components/potdRandom/PotdRandomHeader.tsx:21
 msgid "Explorar"
 msgstr "Explorar"
 
-#: src/app/index.tsx:75
+#: src/app/index.tsx:80
 msgid "Explorar aleatórias"
 msgstr "Explorar aleatórias"
 
@@ -88,11 +85,11 @@ msgstr "Foto do dia"
 #~ msgid "Março"
 #~ msgstr "Março"
 
-#: src/app/PotdMyBirthday.tsx:93
+#: src/app/PotdMyBirthday.tsx:95
 msgid "Mês"
 msgstr "Mês"
 
-#: src/components/potdBirthday/PotdBirthdayHeader.tsx:14
+#: src/components/potdBirthday/PotdBirthdayHeader.tsx:15
 msgid "Meu Aniversário"
 msgstr "Meu Aniversário"
 
@@ -100,7 +97,7 @@ msgstr "Meu Aniversário"
 msgid "Não foi possível encontrar uma foto para essa data."
 msgstr "Não foi possível encontrar uma foto para essa data."
 
-#: src/app/index.tsx:90
+#: src/app/index.tsx:98
 msgid "No meu aniversário"
 msgstr "No meu aniversário"
 
@@ -112,7 +109,7 @@ msgstr "No meu aniversário"
 #~ msgid "Outubro"
 #~ msgstr "Outubro"
 
-#: src/app/PotdMyBirthday.tsx:71
+#: src/app/PotdMyBirthday.tsx:73
 msgid "Qual foto a NASA tirou no dia do seu nascimento?"
 msgstr "Qual foto a NASA tirou no dia do seu nascimento?"
 

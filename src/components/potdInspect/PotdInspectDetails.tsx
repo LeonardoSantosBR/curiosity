@@ -14,7 +14,7 @@ export default function PotdInspectDetails(
       <View className="px-10 gap-3">
         <View className="gap-1">
           <Text className="text-text-primary font-bold text-2xl leading-tight">
-            {t`${data?.title}`}
+            {data?.title}
           </Text>
           {data?.copyright && (
             <Text className="text-text-tertiary text-sm font-medium">
@@ -24,7 +24,7 @@ export default function PotdInspectDetails(
         </View>
         <View className="h-px bg-inspect-divider" />
         <Text className="text-text-secondary text-base leading-relaxed">
-          {t`${data?.explanation}`}
+          {data?.explanation}
         </Text>
         <Pressable
           onPress={() => router.back()}
