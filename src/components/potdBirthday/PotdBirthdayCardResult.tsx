@@ -52,7 +52,6 @@ export function PotdBirthdayCardResult({
               {t`${data.explanation}`}
             </Text>
           </View>
-
         </View>
       )
       }
