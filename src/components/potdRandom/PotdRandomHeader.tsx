@@ -1,4 +1,5 @@
 import Feather from '@expo/vector-icons/Feather';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { t } from "@lingui/core/macro";
 import { useRouter } from "expo-router";
 import { Pressable, Text, View } from "react-native";
@@ -16,7 +17,7 @@ export function PotdRandomHeader({ onRefresh }: Props) {
         onPress={() => router.back()}
         className="flex-row items-center gap-3"
       >
-        <Text className="text-text-primary text-5xl leading-none">‹</Text>
+        <Ionicons name="arrow-back-circle" size={24} color="black" />
         <Text className="text-text-primary font-bold text-2xl">{t`Explorar`}</Text>
       </Pressable>
       <Pressable onPress={onRefresh}>

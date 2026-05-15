@@ -1,4 +1,4 @@
-import { isDirectVideoFile } from "@/helpers";
+import { videoBelongsToNasa } from "@/helpers";
 import { potdDataType } from "@/types";
 import { useVideoPlayer, VideoView } from "expo-video";
 import { Dimensions, Image } from "react-native";
@@ -10,27 +10,27 @@ export function PotdInspectMediaPreview({
   url,
   media_type,
 }: Pick<potdDataType, "url" | "media_type">): React.JSX.Element {
-  const isDirect = media_type === "video" && isDirectVideoFile(url);
+  const isVideo = media_type === "video"
+  const belongsToNasa = isVideo && videoBelongsToNasa(url);
 
-  const player = useVideoPlayer(isDirect ? url : null, (p) => {
+  const player = useVideoPlayer(belongsToNasa ? url : null, (p) => {
     p.loop = true;
     p.muted = true;
     p.play();
   });
 
-  if (media_type === "video") {
-    if (isDirect)
-      return (
-        <VideoView
-          player={player}
-          style={{ width: "100%", height: mediaHeight }}
-          nativeControls
-          contentFit="cover"
-        />
-      );
-
-    return <VideoThumbnail url={url} isDetailed={true} />;
+  if (belongsToNasa) {
+    return (
+      <VideoView
+        player={player}
+        style={{ width: "100%", height: mediaHeight }}
+        nativeControls
+        contentFit="cover"
+      />
+    )
   }
+
+  if (isVideo) return <VideoThumbnail url={url} isDetailed={true} />;
 
   return (
     <Image

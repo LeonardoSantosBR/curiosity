@@ -61,7 +61,9 @@ export default function PotdMyBirthday(): React.JSX.Element {
 
   return (
     <SafeAreaView className="flex-1 bg-white">
-      <PotdBirthdayHeader />
+      <View className="p-2">
+        <PotdBirthdayHeader />
+      </View>
 
       <ScrollView
         showsVerticalScrollIndicator={false}

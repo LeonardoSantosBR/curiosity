@@ -1,18 +1,19 @@
 import { CARD_WIDTH } from "@/constants";
-import { formatDisplayDate, getCardThumbnail } from "@/helpers";
+import { formatDisplayDate } from "@/helpers";
 import { potdDataType } from "@/types";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
 
 export function PotdRandomCard({
   item,
+  thumbnailUrl,
   onPress,
 }: {
   item: potdDataType;
+  thumbnailUrl: string | null;
   onPress: () => void;
 }): React.JSX.Element {
-  const thumbnail = getCardThumbnail(item);
-
   return (
     <Pressable onPress={onPress} style={{ width: CARD_WIDTH }}>
       {({ pressed }) => (
@@ -20,17 +21,16 @@ export function PotdRandomCard({
           style={{ opacity: pressed ? 0.75 : 1 }}
           className="bg-random-card rounded-2xl overflow-hidden border border-random-card-border"
         >
-          {thumbnail ? (
+          {thumbnailUrl ? (
             <Image
-              source={{ uri: thumbnail }}
-              style={{ width: "100%", height: 110 }}
+              source={{ uri: thumbnailUrl }}
+              style={{ width: "100%", height: 120 }}
               resizeMode="cover"
             />
           ) : (
-            <View
-              style={{ width: "100%", height: 110 }}
-              className="bg-potd-card items-center justify-center"
-            />
+            <View className="w-full h-[110px] items-center justify-center bg-potd-card">
+              <FontAwesome name="play-circle" size={26} color="red" />
+            </View>
           )}
           <View className="p-2.5 gap-0.5">
             {item.date && (

@@ -11,21 +11,24 @@ export default function PotdRandom(): React.JSX.Element {
   const router = useRouter();
 
   const handleCardPress = (item: potdDataType) => {
+    const paramsData = {
+      url: item.url,
+      title: item.title,
+      copyright: item.copyright ?? "",
+      explanation: item.explanation,
+      media_type: item.media_type ?? "image",
+    }
     router.push({
       pathname: "/PotdInspect",
-      params: {
-        url: item.url,
-        title: item.title,
-        copyright: item.copyright ?? "",
-        explanation: item.explanation,
-        media_type: item.media_type ?? "image",
-      },
+      params: paramsData
     });
   };
 
   return (
     <View className="flex-1 bg-white">
-      <PotdRandomHeader onRefresh={refetch} />
+      <View className="p-2">
+        <PotdRandomHeader onRefresh={refetch} />
+      </View>
 
       {isLoading ? (
         <Loading />
@@ -41,7 +44,11 @@ export default function PotdRandom(): React.JSX.Element {
           }}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
-            <PotdRandomCard item={item} onPress={() => handleCardPress(item)} />
+            <PotdRandomCard
+              item={item}
+              thumbnailUrl={item.thumbnailUrl}
+              onPress={() => handleCardPress(item)}
+            />
           )}
         />
       )}
