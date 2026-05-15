@@ -1,6 +1,59 @@
-### <ins>NASA basic info</ins>:
-<p>- oficial website: https://api.nasa.gov/</p>
-<p>- api example: (GET) https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2024-03-01</p>
+<h2>NASA basic info</h2>
+<p>Curiosity is a mobile app built with React Native + Expo, powered by the NASA APOD (Astronomy Picture of the Day) API. Its core idea is to let users explore NASA's daily astronomy images and videos in a clean, minimalist interface.</p>
+
+### <ins>The curiosity logos</ins>:
+<img  src="https://github.com/user-attachments/assets/d7bd3265-bd86-4717-9348-68eafc7343f9" width="15%"/>
+<img width="1983" height="793" alt="Image" src="https://github.com/user-attachments/assets/8ebd5aa9-2f27-48db-887a-19f37950351a" />
+
+###  <ins>2026/05/15 · Implemented cloudflare worker to optimize images and render more quickly</ins>:
+<p align="start">
+  <img  src="https://github.com/user-attachments/assets/7e90dc71-de3c-4e88-a7a0-08e497e1e771" width="45%"/>
+  <img  src="https://github.com/user-attachments/assets/c241877e-28ec-4ee0-bce3-ec029d58d87d" width="45%"/>
+</p>
+
+###  <ins>2026/05/13 · Minor style adjustments</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/2388af41-7033-496f-b2f0-15399333a591"   width="45%"/>
+    <img  src="https://github.com/user-attachments/assets/95d1ced7-7672-4389-923b-32b2b563d082"  width="45%"/>
+</p>
+<p align="start">
+     <img  src="https://github.com/user-attachments/assets/8dd00cf2-d3e8-47af-a908-4cea9e92cf20"   width="45%"/>
+     <img  src="https://github.com/user-attachments/assets/cb3f67ad-6628-46e2-bddc-2767add270e5"   width="45%"/>
+  </p>
+
+###  <ins>2026/05/12 · Random Pictures · improvement with refresh button to save requests</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/3c132100-c798-483a-b336-d9d9daed0cee" width="45%"/>
+</p>
+
+###  <ins>2026/05/11 · Birthday Picture </ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/e2eed069-cfc9-4f59-87d0-f9badecc34ee" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/2da6b3d1-d943-4a6e-9df0-4eaba773b90a" width="45%" />
+</p>
+
+###  <ins>2026/05/11 · Random Pictures </ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/a90a3256-b637-4449-b805-a958cdff794c" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/60aa456b-676b-42dc-b598-959a55a67482" width="45%" />
+</p>
+
+###  <ins>2026/05/11 · Details · redesigned page</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/c6cfc225-f85f-4078-b37e-bca02c8e2b46" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/f5ae4b03-8955-4e10-b82a-d2499d017a6a" width="45%" />
+</p>
+
+###  <ins>2026/05/05 · Details · screen Image of the day details</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/2e35fd98-27e0-4096-a72c-8872ba95e009" width="45%" />
+  <img src="https://github.com/user-attachments/assets/f27d1670-6c82-4a34-befb-eed3384840fe" width="45%" />
+</p>
+
+###  <ins>2026/04/29 · Home · screen Image of the day · NASA api integrated</ins>:
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/b3c4469e-8de6-4ee1-8d7b-81ddee74fc1b" width="45%" />
+</p>
 
 ###  <ins>UI fix by Claude Code Design</ins>:
 * i changed the app's name to curiosity and some ui to be more minimalistic
@@ -24,9 +77,6 @@
     </td>
   </tr>
 </table>
-
-### <ins>The curiosity logo</ins>:
-<img width="162" height="162" alt="Image" src="https://github.com/user-attachments/assets/2f501f9c-a781-4148-88e4-d96bbe90bf20" />
 
 ###  <ins>Ui first concept by Claude Code</ins>:
 <table align="center">
