@@ -13,9 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. placeholder {0}: String(date.getMonth() + 1).padStart(2, "0")
-#. placeholder {0}: data.copyright
-#. placeholder {0}: data.explanation
 #: src/components/potd/PotdDetails.tsx:12
 #: src/components/potd/PotdDetails.tsx:16
 #: src/components/potd/PotdDetails.tsx:20
@@ -25,26 +22,26 @@ msgstr ""
 #: src/components/potdInspect/PotdInspectDetails.tsx:27
 #: src/components/potdRandom/PotdRandomCard.tsx:45
 #: src/helpers/getDateInfo.ts:12
-msgid "{0}"
-msgstr "{0}"
+#~ msgid "{0}"
+#~ msgstr "{0}"
 
 #: src/components/potd/PotdNoData.tsx:7
 msgid "Ainda não há foto ou vídeo do dia disponível."
 msgstr "There are no photos or videos available from that day yet."
 
-#: src/app/PotdMyBirthday.tsx:111
+#: src/app/PotdMyBirthday.tsx:113
 msgid "Ano"
 msgstr "Year"
 
-#: src/app/PotdMyBirthday.tsx:75
+#: src/app/PotdMyBirthday.tsx:77
 msgid "Dia"
 msgstr "Day"
 
-#: src/components/potdRandom/PotdRandomHeader.tsx:15
+#: src/components/potdRandom/PotdRandomHeader.tsx:21
 msgid "Explorar"
 msgstr "Discover"
 
-#: src/app/index.tsx:75
+#: src/app/index.tsx:80
 msgid "Explorar aleatórias"
 msgstr "Explore randomly"
 
@@ -52,11 +49,11 @@ msgstr "Explore randomly"
 msgid "Foto do dia"
 msgstr "Photo of the day"
 
-#: src/app/PotdMyBirthday.tsx:93
+#: src/app/PotdMyBirthday.tsx:95
 msgid "Mês"
 msgstr "Month"
 
-#: src/components/potdBirthday/PotdBirthdayHeader.tsx:14
+#: src/components/potdBirthday/PotdBirthdayHeader.tsx:15
 msgid "Meu Aniversário"
 msgstr "My birthday"
 
@@ -64,11 +61,11 @@ msgstr "My birthday"
 msgid "Não foi possível encontrar uma foto para essa data."
 msgstr "We were unable to find a photo for that date."
 
-#: src/app/index.tsx:90
+#: src/app/index.tsx:98
 msgid "No meu aniversário"
 msgstr "On my birthday"
 
-#: src/app/PotdMyBirthday.tsx:71
+#: src/app/PotdMyBirthday.tsx:73
 msgid "Qual foto a NASA tirou no dia do seu nascimento?"
 msgstr "What photo did NASA take on the day you were born?"
 

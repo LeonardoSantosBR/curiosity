@@ -2,7 +2,6 @@ import { CARD_WIDTH } from "@/constants";
 import { formatDisplayDate } from "@/helpers";
 import { potdDataType } from "@/types";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
-import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
 
 export function PotdRandomCard({
@@ -42,7 +41,7 @@ export function PotdRandomCard({
               className="text-text-primary font-bold text-sm leading-tight"
               numberOfLines={2}
             >
-              {t`${item.title}`}
+              {item.title}
             </Text>
           </View>
         </View>

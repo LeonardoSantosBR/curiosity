@@ -1,6 +1,5 @@
 import { getCloudFlareWorkerImageUrl } from "@/helpers";
 import { potdDataType } from "@/types";
-import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
 
 export function PotdBirthdayCardResult({
@@ -43,13 +42,13 @@ export function PotdBirthdayCardResult({
               </View>
             )}
             <Text className="text-text-primary font-bold text-lg leading-tight">
-              {t`${data.title}`}
+              {data.title}
             </Text>
             <Text
               className="text-text-secondary text-sm leading-relaxed"
               numberOfLines={2}
             >
-              {t`${data.explanation}`}
+              {data.explanation}
             </Text>
           </View>
         </View>
