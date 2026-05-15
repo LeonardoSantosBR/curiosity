@@ -1,7 +1,7 @@
 <h2>NASA basic info</h2>
 <p>Curiosity is a mobile app built with React Native + Expo, powered by the NASA APOD (Astronomy Picture of the Day) API. Its core idea is to let users explore NASA's daily astronomy images and videos in a clean, minimalist interface.</p>
 
-### <ins>The curiosity logos</ins>:
+### <ins>The curiosity identity</ins>:
 <img  src="https://github.com/user-attachments/assets/d7bd3265-bd86-4717-9348-68eafc7343f9" width="15%"/>
 <img width="1983" height="793" alt="Image" src="https://github.com/user-attachments/assets/8ebd5aa9-2f27-48db-887a-19f37950351a" />
 
