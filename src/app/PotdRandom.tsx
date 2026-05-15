@@ -44,7 +44,11 @@ export default function PotdRandom(): React.JSX.Element {
           }}
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => (
-            <PotdRandomCard item={item} onPress={() => handleCardPress(item)} />
+            <PotdRandomCard
+              item={item}
+              thumbnailUrl={item.thumbnailUrl}
+              onPress={() => handleCardPress(item)}
+            />
           )}
         />
       )}

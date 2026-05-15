@@ -1,4 +1,5 @@
 import { potdDataType } from "@/types";
+import { getCloudFlareWorkerImageUrl } from "./getCloudFlareWorkerImageUrl";
 
 export function getCardThumbnail(item: potdDataType): string | null {
   if (item.media_type === "video") {
@@ -7,5 +8,6 @@ export function getCardThumbnail(item: potdDataType): string | null {
       item.url.match(/youtu\.be\/([^?&]+)/);
     return match ? `https://img.youtube.com/vi/${match[1]}/mqdefault.jpg` : null;
   }
-  return item.url;
+  const resizedUrl = getCloudFlareWorkerImageUrl(item.url);
+  return resizedUrl
 }

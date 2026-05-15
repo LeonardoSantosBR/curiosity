@@ -1,3 +1,4 @@
+import { getCloudFlareWorkerImageUrl } from "@/helpers";
 import { potdDataType } from "@/types";
 import { t } from "@lingui/core/macro";
 import { Image, Pressable, Text, View } from "react-native";
@@ -25,7 +26,7 @@ export function PotdBirthdayCardResult({
         >
           {isImage &&
             <Image
-              source={{ uri: data.url }}
+              source={{ uri: getCloudFlareWorkerImageUrl(data.url) }}
               className=" w-24"
               resizeMode="cover"
             />
@@ -51,7 +52,6 @@ export function PotdBirthdayCardResult({
               {t`${data.explanation}`}
             </Text>
           </View>
-
         </View>
       )
       }
